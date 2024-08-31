@@ -1,0 +1,79 @@
+// section2
+.section2 {
+    margin-top: 30px;
+    padding: 30px;
+    .p-carousel-content{
+        position: relative;
+    }
+    .p-carousel-items-content{
+        border-radius: 50px;
+    }
+    .p-carousel-next ,
+    .p-carousel-prev{
+        position: absolute;
+        z-index: 1;
+        border: 0;
+        background: rgba(255, 255, 255, 0.6117647059);
+        display: flex;
+        top: 0;
+        bottom: 0;
+        align-items: center;
+        width: 60px;
+        height: 100%;
+        cursor: pointer;
+    }
+    .p-carousel-indicators {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        gap: 10px;
+        width: 100%;
+        padding: 0;
+    }
+    .p-carousel-indicators li {
+        list-style-type: none;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        button {
+            transition: all 0.5s ease 0s;
+            border: 1px solid transparent;
+            width: 11px;
+            height: 11px;
+            display: inline-block;
+            border-radius: 100%;
+            background: #000;
+            opacity: .2;
+            padding: 0;
+        }
+    }
+    .p-carousel-indicators li.p-highlight button {
+        width: 18px;
+        max-width: 18px;
+        height: 18px;
+        max-height: 18px;
+        border-color: #fff !important;
+    }
+    .p-carousel-prev{
+        left: 0;
+    }
+    .p-carousel-next {
+        right: 0;
+    }
+    .p-icon-wrapper svg {
+        width: 20px;
+        height: 20px;
+        path{
+            fill: #000000a8;
+        }
+    }
+    .pooja_img {
+        height: 500px;
+    }
+    .pooja_img img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+    }
+}

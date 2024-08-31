@@ -1,0 +1,99 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --primary-theme: #d8375c;
+    --primary-light: #fef2ee;
+    --secondary-theme: #F47B58;
+    --secondary-light: #F2F4F8;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    background: #ffffff;
+    font-family: Poppins
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.breadcrumb {
+    margin: 0;  
+    display: flex;
+    flex-wrap: wrap;
+    padding: .75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #e9ecef;
+    border-radius: .25rem;
+}
+.breadcrumb .breadcrumb-item {
+    font-size: 12px;
+    font-weight: 400;
+    color: #999;
+}
+.breadcrumb-item+.breadcrumb-item:before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: #6c757d;
+    content: "/";
+}
+ .breadcrumb .breadcrumb-item+.breadcrumb-item:before {
+    content: ">";
+    color: #333;
+}
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: .5rem;
+}
+.form_control,
+.p-inputwrapper input{
+    font-family:Poppins ;
+    font-size: 1rem;
+    width: -webkit-fill-available;
+    color: #334155;
+    background: #ffffff;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #cbd5e1;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, outline-color 0.2s;
+    appearance: none;
+    border-radius: 6px;
+}
+label {
+    font-size: 14px;
+    pointer-events: none;
+    transition-property: all;
+    transition-timing-function: ease;
+    line-height: 1;
+}
+.p-component-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    transition-duration: 0.2s;
+}
+.p-dialog{
+    border-radius: 10px;
+    background: #Ffff;
+}
+.p-dialog .p-dialog-header {
+    border-bottom: 0 none;
+    color: #334155;
+    padding: 1.5rem;
+}
+.p-dialog-content {
+    color: #334155;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+.p-dialog-header-close{
+    width: 1.75rem;
+    height: 1.75rem;
+    color: #64748b;
+    border: 0 none;
+    background: transparent;
+    border-radius: 50%;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, outline-color 0.2s;
+    margin-right: 0.5rem;
+}
+.p-dialog-title{
+    font-size: 16px !important;
+    font-weight: 500;
+}

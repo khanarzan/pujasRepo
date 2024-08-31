@@ -1,0 +1,17 @@
+<section class="section2">
+  <p-carousel 
+  autoplayInterval="3000"
+  [value]="images"      [circular]="true"
+  [numVisible]="1" 
+  [numScroll]="1" 
+  [responsiveOptions]="responsiveOptions1">
+    <ng-template let-image pTemplate="item">
+      <div class="pooja_img">
+          <img 
+              [src]="image.src"
+              [alt]="image.name" 
+              class="w-full border-round" />
+      </div>
+    </ng-template>
+</p-carousel>
+  </section>

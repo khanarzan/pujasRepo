@@ -1,0 +1,71 @@
+.yantras-banner {
+    background-image: url('https://www.rudraksha-ratna.com/Category_Banner.cb6a79710fb46621.png');
+    background-size: 100% 90%;
+    padding: 20px 0 20px;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+.page-title .breadcrumb {
+    margin-bottom: 0 !important;
+    padding: 0;
+    background-color: transparent;
+}
+.breadcrumb {
+    margin: 0;  
+    display: flex;
+    flex-wrap: wrap;
+    padding: .75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #e9ecef;
+    border-radius: .25rem;
+}
+.page-title .breadcrumb .breadcrumb-item {
+    font-size: 12px;
+    font-weight: 400;
+    color: #999;
+}
+.breadcrumb-item+.breadcrumb-item:before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: #6c757d;
+    content: "/";
+}
+.page-title .breadcrumb .breadcrumb-item+.breadcrumb-item:before {
+    content: ">";
+    color: #333;
+}
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: .5rem;
+}
+.page-title .title {
+    width: 70%;
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.main-para{
+    font-size: 16px;
+    width: 70%;
+    line-height: 22px;
+    color: #222;
+    font-weight: 300;
+}
+.section-head {
+    margin-bottom: 30px;
+    text-align: center !important;
+}
+.section-head h4 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+.listing_card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+

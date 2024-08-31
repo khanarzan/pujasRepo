@@ -1,0 +1,60 @@
+// section3
+.section3{
+    .card_wrap{
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 0 0 40px;
+        li{
+            flex: 20%;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            flex-direction: column;
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;   
+            cursor: pointer;         
+            img{
+                width: 100%;
+                height: 350px;
+                border-radius: 5px 5px 0 0;
+                object-fit: cover;
+            }
+            h4{
+                margin: 0;
+                font-weight: 400;
+                font-size: 24px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                top: 0;
+                color: #fff;
+                opacity: 0;
+                transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+                visibility: hidden;
+                background: rgba(0, 0, 0, 0.4509803922);
+                width: calc(100% - 40px);
+                display: flex;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                padding: 0 20px;
+            }
+        }
+        li:hover{
+            h4{
+                opacity: 1;
+                visibility: visible;;
+            }
+        }
+    }
+    .card_category {
+        li {
+            flex: 20%;
+        }
+    }
+}

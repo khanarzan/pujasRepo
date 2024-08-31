@@ -1,0 +1,134 @@
+.breadcrumb-wrapper{
+    padding: 10px 0;
+
+}
+.detail-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+.product-summery {
+    position: relative;
+}
+.product-title-wishlist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-title {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 0;    line-height: 1.1675;
+}
+.product-price {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.175;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    color: #333;
+}
+.product-code {
+    font-size: 14px;
+    color: #222;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+.fw-semibold {
+    font-weight: 600;
+}
+.puja-info p {
+    font-size: 16px;
+}
+.puja-info p span {
+    font-weight: 500;
+    color: #222;
+}
+.puja-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 15px;
+    grid-column-gap: 30px;
+}
+.pooja-options ~ .puja-info{
+    margin-top: 20px;
+}
+.form_head{
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+.form_head ~ label{
+    font-size: 14px;
+}
+.self-end{
+    align-self: flex-end;
+}
+.grid1-3{
+    grid-column: 1 / 3;
+}
+.desc{
+    margin: 0 !important;
+}
+.more-desc{
+    text-decoration: underline;
+    color: var(--primary-theme);
+    font-size: 14px;
+    cursor: pointer;
+}
+.puja-btn{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    button{
+        padding: 10px 30px;
+        font-size: 16px;
+        font-family: Poppins;
+        background: transparent;
+        border-radius: 10px;
+        font-weight: 500;
+    }
+    button:nth-child(1){
+        border: 2px solid var(--primary-theme);
+        color: var(--primary-theme);
+    }
+    button:nth-child(2){
+        border: 0;
+        background: var(--primary-theme);
+        color: #fff;
+    }
+}
+app-listing-card{
+    margin-right: 20px;
+    display: block;
+}
+.releted-product{
+    .p-carousel-indicators {
+        display: none;
+    }
+    .p-carousel{
+        position: relative;
+    }
+    .p-carousel-prev{
+        right: 60px;
+    }
+    .p-carousel-next{
+        right: 0;
+    }
+    .p-carousel-prev, 
+    .p-carousel-next{
+        position: absolute;
+        top: -64px;
+        z-index: 1;
+        height: 50px;
+        width: 50px;
+        border-radius: 35%;
+        border: 0;
+        background: #fff;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        cursor: pointer;
+    }
+}

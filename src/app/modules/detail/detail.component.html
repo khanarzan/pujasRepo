@@ -1,0 +1,105 @@
+<div class="breadcrumb-wrapper">
+    <div class="container">
+        <app-breadcrum></app-breadcrum>
+    </div>
+</div>
+<div class="container">
+    <div class="detail-body">
+        <div>
+
+        </div>
+        <div class="product-summery">
+            <div class="product-title-wishlist">
+                <h1 class="product-title"> Narayan Nagbali Puja at Trimbakeshwar </h1>
+            </div>
+            <a type="button" class="more-desc" (click)="showDialog()" >more description</a>
+            
+            <div>
+                <div class="product-detail">
+                    <div class="product-price"> INR 28,001 </div>
+                    <p class="product-code"><span class="fw-semibold">Product Code:</span> PY441 </p>
+                </div>
+            </div>
+            <div class="pooja-options">
+                <div class="puja-info">
+                    <div class="puja-wrap">
+                        <p><span>No. of Priests: </span>3 </p>
+                    </div>
+                    <div class="puja-wrap">
+                        <p><span>Duration: </span>3 Days (4
+                            hours daily) </p>
+                    </div>
+                </div>
+            </div>
+            <div class="puja-info">
+                <div>
+                    <label for="username">Name</label>
+                    <input class="form_control" id="username" type="text" placeholder="Enter Name"/>
+                </div>
+                <div>
+                    <label  for="username">Sankalp/Wish</label>
+                    <textarea id="username" rows="5" cols="30" class="form_control" placeholder="Enter Sankalp/Wish" >
+                    </textarea>
+                </div>
+                <div>
+                    <h4 class="form_head"> Birth Details (Optional) </h4>
+                    <label for="birth_date">Date of Birth</label>
+                    <input type="date" class="form_control" >
+                </div>
+                <div class="self-end">
+                    <label for="username">Mother's Name (Optional)</label>
+                    <input class="form_control" id="username" type="text" placeholder="Enter Your Mother's Name"/>
+                </div>
+                <div>
+                    <label for="birth_date">TIme of Birth</label>
+                    <input type="time" class="form_control" >
+                </div>
+                <div>
+                    <label for="username">Father's Name (Optional)</label>
+                    <input class="form_control" id="username" type="text" placeholder="Enter Your Father's Name"/>
+                </div>
+                <div>
+                    <label for="username">Place of Birth</label>
+                    <input class="form_control" id="username" type="text" placeholder="Enter Place of Birth"/>
+                </div>
+                <div>
+                    <label for="username">Gotra/Clan Name (Optional)</label>
+                    <input class="form_control" id="username" type="text" placeholder="Enter Gotra/Clan Name"/>
+                </div>
+                <div class="grid1-3">
+                    <label for="username">Upload Image (Optional)</label>
+                    <input class="form_control" id="username" type="file"/>
+                </div>
+                <div class="grid1-3">
+                    <label for="username">Special Instructions (Optional)</label>
+                    <textarea id="username" rows="5" cols="30" class="form_control" placeholder="Enter Special Instructions (Optional)" >
+                    </textarea>
+                </div>
+            </div>
+            <div class="puja-btn">
+                <button> Add to Cart </button>
+                <button>  Buy Now  </button>
+            </div>
+        </div>
+    </div>
+    <div class="releted-product">
+        <h1 class="section_heading">Related Products</h1>
+        <p-carousel 
+        [value]="listings"
+        [circular]="true"
+        [numVisible]="4"
+        [numScroll]="1">
+        
+        <ng-template let-item pTemplate="item">
+            <app-listing-card [data]="item"></app-listing-card>
+        </ng-template>
+        
+    </p-carousel>
+
+    
+    </div>
+    
+</div>
+<p-dialog header="Description" [modal]="true" [(visible)]="visible" [style]="{ width: '40rem' }">
+    <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum dolor illo, assumenda accusamus voluptatibus mollitia consequuntur nesciunt itaque blanditiis, ex suscipit cum nulla hic, ipsum qui asperiores ullam numquam quibusdam.</p>
+</p-dialog>

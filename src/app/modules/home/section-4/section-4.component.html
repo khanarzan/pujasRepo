@@ -1,0 +1,24 @@
+
+<section class="section4">
+    <h1 class="section_heading">Upcoming Pujas/Events</h1>
+    <p-carousel
+      [value]="products" 
+      [numVisible]="3" 
+      [numScroll]="1" 
+      [circular]="false" 
+      [responsiveOptions]="responsiveOptions2">
+        <ng-template let-product pTemplate="item">
+          <div class="concert_img">
+            <!-- src="https://primefaces.org/cdn/primeng/images/demo/product/{{ product.image }}" -->
+              <img  
+                  src="https://s3.amazonaws.com/RudraCentre/ProductThumbnail/Other_Products/11546H-2779.S1.jpg"
+                  [alt]="product.name" 
+                  class="w-full border-round" />
+              <h5>Pop</h5>
+              <h4>Hamilton (Touring)</h4>
+              <div class="hoverContent">
+              </div>
+          </div>
+        </ng-template>
+    </p-carousel>
+  </section>

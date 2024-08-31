@@ -1,0 +1,14 @@
+@import'./../section-6/section-6.component.scss';
+.section7{
+    padding-top: 60px;
+
+    .card_grid2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        grid-row-gap: 40px;
+    }
+    .concert_img img{
+        object-fit: cover;
+    }
+}

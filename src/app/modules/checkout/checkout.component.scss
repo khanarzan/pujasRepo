@@ -1,0 +1,11 @@
+.checkout_wrap{
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+.checkout_aside{
+    flex: 0 0 68%;
+}
+.checkout_summary{
+    flex: 0 0 30%;
+}
