@@ -1,16 +1,9 @@
-import { Component, ViewEncapsulation } from '@angular/core';
-import { FloatLabelModule } from 'primeng/floatlabel';
-import { CalendarModule } from 'primeng/calendar';
-import { FormsModule } from '@angular/forms';
-import { DialogModule } from 'primeng/dialog';
-import { BreadcrumComponent } from '../../common/breadcrum/breadcrum.component';
-import { CarouselModule } from 'primeng/carousel';
+import { Component, ViewEncapsulation, ElementRef, ViewChild } from '@angular/core';
 import { ListingCardComponent } from '../listing/listing-card/listing-card.component';
+import { PhotoService } from '../../service/details/photoservice';
 
 @Component({
   selector: 'app-detail',
-  standalone: true,
-  imports: [FloatLabelModule,CalendarModule,FormsModule,DialogModule,BreadcrumComponent,CarouselModule,ListingCardComponent],
   templateUrl: './detail.component.html',
   styleUrl: './detail.component.scss',
   encapsulation: ViewEncapsulation.None
@@ -37,4 +30,39 @@ export class DetailComponent {
     { title: 'Listing 3', description: 'Description 3' },
     // Add more listings as necessary
   ];
+
+  // images
+  images: any[] | undefined;
+    
+    responsiveOptions: any[] | undefined;
+
+    constructor(private photoService: PhotoService) {}
+
+    ngOnInit() {
+        this.photoService.getImages().then((images) => (this.images = images));
+        this.responsiveOptions = [
+            {
+                breakpoint: '1024px',
+                numVisible: 5
+            },
+            {
+                breakpoint: '768px',
+                numVisible: 3
+            },
+            {
+                breakpoint: '560px',
+                numVisible: 1
+            }
+        ];
+    }
+    @ViewChild('imageElement') imageElement!: ElementRef<HTMLImageElement>;
+
+  onMouseMove(event: MouseEvent): void {
+    const imgElement = this.imageElement.nativeElement;
+    const rect = imgElement.getBoundingClientRect();
+    const x = ((event.clientX - rect.left) / rect.width) * 100;
+    const y = ((event.clientY - rect.top) / rect.height) * 100;
+
+    imgElement.style.transformOrigin = `${x}% ${y}%`;
+  }
 }

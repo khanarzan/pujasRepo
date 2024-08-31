@@ -19,11 +19,11 @@ const routes: Routes = [
             },
             {
                 path: 'listing',
-                component: ListingComponent
+                loadChildren: () => import('../modules/listing/listing.module').then(m => m.ListingRoutes )
             },
             {
                 path: 'detail',
-                component: DetailComponent
+                loadChildren: () => import('../modules/detail/detail.module').then(m => m.DetailRoutes )
             },
             {
                 path: 'checkout',

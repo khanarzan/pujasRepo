@@ -132,3 +132,20 @@ app-listing-card{
         cursor: pointer;
     }
 }
+.mainImg {
+    overflow: hidden;
+    width: 100%;
+}
+.mainImg img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.9s ease, transform-origin 0.9s ease;
+    transform-origin: center;
+  }
+
+  .mainImg:hover img {
+    transform: scale(2.5);
+  }
+  .thumImg img{
+    width: 100%;
+  }

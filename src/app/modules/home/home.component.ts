@@ -19,7 +19,6 @@ import { ListingComponent } from '../listing/listing.component';
   standalone: true,
   imports: [
     RouterOutlet,
-    DetailComponent,
     ListingComponent,
     MegaMenuModule,
     CommonModule,
