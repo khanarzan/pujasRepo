@@ -5,24 +5,25 @@
 </div>
 <div class="container">
     <div class="detail-body">
-        <div>
-            <p-galleria 
-                [value]="images" 
-                [responsiveOptions]="responsiveOptions" 
-                [containerStyle]="{ 'max-width': '640px' }" 
-                [numVisible]="5">
-                    <ng-template pTemplate="item" let-item>
-                        <div class="mainImg" (mousemove)="onMouseMove($event)">
-                            <img [src]="item.itemImageSrc"  #imageElement style="width: 100%;" />
-                        </div>
-                    </ng-template>
-                    <ng-template pTemplate="thumbnail" let-item>
-                        <div class="thumImg grid grid-nogutter justify-content-center">
-                            <img [src]="item.thumbnailImageSrc" />
-                        </div>
-                    </ng-template>
-            </p-galleria>
-
+        <div class="productImagesContainer">
+            <div class="productImages">
+                <p-galleria 
+                    [value]="images" 
+                    [responsiveOptions]="responsiveOptions" 
+                    [containerStyle]="{ 'max-width': '640px' }" 
+                    [numVisible]="5">
+                        <ng-template pTemplate="item" let-item>
+                            <div class="mainImg" (mousemove)="onMouseMove($event)">
+                                <img [src]="item.itemImageSrc"  #imageElement style="width: 100%;" />
+                            </div>
+                        </ng-template>
+                        <ng-template pTemplate="thumbnail" let-item>
+                            <div class="thumImg grid grid-nogutter justify-content-center">
+                                <img [src]="item.thumbnailImageSrc" />
+                            </div>
+                        </ng-template>
+                </p-galleria>
+            </div>
         </div>
         <div class="product-summery">
             <div class="product-title-wishlist">

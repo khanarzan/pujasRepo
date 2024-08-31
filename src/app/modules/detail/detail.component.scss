@@ -2,6 +2,15 @@
     padding: 10px 0;
 
 }
+.productImages,
+.productImagesContainer{
+    position: sticky;
+    top: 25px;;
+}
+.productImages{
+    position: sticky;
+    top: 25px;;
+}
 .detail-body{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -149,3 +158,29 @@ app-listing-card{
   .thumImg img{
     width: 100%;
   }
+  .thumImg {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--primary-theme);
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.productImages p-galleriathumbnails {
+    margin-top: 15px;
+}
+.productImages .p-galleria-thumbnail-prev, 
+.productImages .p-galleria-thumbnail-next{
+    background-color: var(--primary-theme);
+    color: #fff;
+    border: 1px solid var(--primary-theme);
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    width: 35px;
+    height: 35px;
+}
