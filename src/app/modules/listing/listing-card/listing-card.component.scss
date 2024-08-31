@@ -45,6 +45,9 @@
         color: var(--primary-theme);
         font-weight: 600;
     }
+    a:hover {
+        text-decoration: underline;
+    }
 }
 .desc{
     font-weight: 400;

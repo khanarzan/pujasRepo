@@ -19,15 +19,15 @@ const routes: Routes = [
             },
             {
                 path: 'listing',
-                component:ListingComponent
+                component: ListingComponent
             },
             {
                 path: 'detail',
-                component:DetailComponent
+                component: DetailComponent
             },
             {
                 path: 'checkout',
-                component:CheckoutComponent
+                component: CheckoutComponent
             }
            
         ],

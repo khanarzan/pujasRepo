@@ -30,8 +30,8 @@
         height: 0;
     }
     .hoverContent::before{
-        background-color: rgb(2, 77, 223);
-        background-image: linear-gradient(rgb(70, 117, 232), rgb(2, 77, 223));
+        background-color: var(--primary-theme);
+    background-image: linear-gradient((var(--primary-light), var(--primary-theme)));
         position: absolute;
         top: 0px;
         right: 0px;
@@ -45,8 +45,8 @@
         z-index: 40;
     }
     .hoverContent::after{
-        background-color: rgb(2, 77, 223);
-        background-image: linear-gradient(rgb(70, 117, 232), rgb(2, 77, 223));
+        background-color: var(--primary-theme);
+    background-image: linear-gradient((var(--primary-light), var(--primary-theme)));
         position: absolute;
         top: 0px;
         right: 0px;
@@ -105,7 +105,7 @@
         letter-spacing: inherit;
         text-transform: inherit;
         color: rgb(255, 255, 255);
-        background-color: rgb(2, 77, 223);
+        background-color: var(--primary-theme);
         display: inline-block;
         width: 44px;
         height: 44px;
