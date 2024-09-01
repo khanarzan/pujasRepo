@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { ListingComponent } from '../modules/listing/listing.component';
 import { DetailComponent } from '../modules/detail/detail.component';
 import { CheckoutComponent } from '../modules/checkout/checkout.component';
+import { FooterComponent } from "./footer/footer.component";
 
 const routes: Routes = [
     {
@@ -37,7 +38,7 @@ const routes: Routes = [
 
 @NgModule({
     declarations: [BaseComponent],
-    imports: [CommonModule,HeaderComponent, MenuModule, RouterModule.forChild(routes)],
+    imports: [CommonModule, HeaderComponent, MenuModule, RouterModule.forChild(routes), FooterComponent],
     exports: [RouterModule]
 })
 export class LayoutRoutes { }
