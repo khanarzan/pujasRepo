@@ -8,6 +8,10 @@ import { ListingComponent } from '../modules/listing/listing.component';
 import { DetailComponent } from '../modules/detail/detail.component';
 import { CheckoutComponent } from '../modules/checkout/checkout.component';
 import { FooterComponent } from "./footer/footer.component";
+import { DialogModule } from 'primeng/dialog';
+import { ProfileModule } from '../modules/profile/profile.module';
+import { FormsModule } from '@angular/forms';
+import { FullPageLoginComponent } from '../modules/profile/full-page-login/full-page-login.component';
 
 const routes: Routes = [
     {
@@ -29,7 +33,12 @@ const routes: Routes = [
             {
                 path: 'checkout',
                 component: CheckoutComponent
-            }
+            },
+            {
+                path: 'login',
+                component: FullPageLoginComponent
+            },
+
            
         ],
     },
@@ -37,8 +46,15 @@ const routes: Routes = [
 ];
 
 @NgModule({
-    declarations: [BaseComponent],
-    imports: [CommonModule, HeaderComponent, MenuModule, RouterModule.forChild(routes), FooterComponent],
+    declarations: [BaseComponent,
+        HeaderComponent],
+    imports: [
+        CommonModule, 
+        DialogModule, 
+        MenuModule, 
+        ProfileModule,
+        FormsModule,
+        RouterModule.forChild(routes), FooterComponent],
     exports: [RouterModule]
 })
 export class LayoutRoutes { }

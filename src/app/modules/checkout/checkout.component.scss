@@ -2,10 +2,194 @@
     display: flex;
     justify-content: space-between;
     gap: 32px;
+    padding: 50px 0;
 }
 .checkout_aside{
     flex: 0 0 68%;
 }
 .checkout_summary{
     flex: 0 0 30%;
+}
+.checkout_info:not(:first-child){
+    margin-top: 20px;
+}
+.checkout_info{
+    width: 100%;
+    background: #ffff;
+    border-radius: 16px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    .p-accordion-header-link{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 15px;
+        border-bottom: 1px solid #e9eef1;
+    }
+    .p-accordion-tab{
+        border: 1px solid #e9eef1;
+        border-radius: 10px;
+        display: block;
+        margin-top: 20px;
+    }
+    .p-accordion-content{
+        padding: 15px;
+        background-color: #f1f1f1;
+    }
+}
+.user_section{
+    margin: 15px 0;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+.grid3col{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+.grid2col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-end;
+    gap: 15px;
+}
+.inputWrap{
+    label{
+        display: block;
+        margin-bottom: 5px;
+    }
+    input{
+        height: 50px;
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #EAECF2;
+        padding-left: 40px !important;
+    }
+}
+.contactForm{
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    gap: 10px;
+}
+.dropDown .p-dropdown.p-inputwrapper{
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #EAECF2;
+}
+.mb-15{
+    margin-bottom: 15px;
+}
+.checkput_Head{
+    font-size: 20px;
+    font-weight: 500;
+}
+.shipping_wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.shipping_desc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    h4{
+        margin-bottom: 0;
+    }
+}
+.shipping_option{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 10px;
+    border: 1px solid #d2d2d2;
+    border-radius: 10px;
+}
+.checkout_summary{
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    padding: 15px;
+    border-radius: 10px;
+    height: fit-content;
+}
+.bookSum_contentWrap ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    justify-content: space-between;
+    text-align: center;
+    grid-template-columns: 30% 30% 30%;
+}
+.bookSum_contentWrap ul li{
+    padding: 10px 10px 0;
+}
+.bookSum_contentWrap ul:nth-child(1){
+    border-bottom: 1px solid #c3c3c3;
+    padding-bottom: 10px;
+}
+.bookSum_contentWrap ul:nth-child(1) li{
+    font-weight: 500;
+}
+.bookSum_contentWrap ul:nth-child(2) li{
+    font-size: 14px;
+    font-weight: 400;
+}
+.bookSum_total ul,.bookSum_totalAmt ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #c3c3c3;
+    border-bottom: 1px solid #c3c3c3;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+.bookSum_totalAmt ul{
+    border-top: 0 !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    li{
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+.bookSum_points{
+    h4{
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    .green{
+        color: green;
+    }
+    span{
+        display: block;
+        font-size: 14px;
+    }
+}
+.mt-15{
+    margin-top: 15px;
+}
+.order_btn{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    border: 2px solid #740074;
+    background-color: #740074;
+    color: #fff;
+    line-height: 24px;
+    padding: 10px 30px;
+    text-align: center;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    border-radius: 4px;
+}
+.bookSum_footer{
+    text-align: center;
 }

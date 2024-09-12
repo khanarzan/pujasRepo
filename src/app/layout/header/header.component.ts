@@ -1,14 +1,9 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { MegaMenuItem, MenuItem } from 'primeng/api';
-import { MenuModule } from 'primeng/menu';
 import { ProductService } from '../../productservice';
 
 @Component({
   selector: 'app-header',
-  standalone: true,
-  imports: [
-    MenuModule,
-  ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
   providers: [ProductService],
@@ -17,6 +12,7 @@ import { ProductService } from '../../productservice';
 export class HeaderComponent {
   items: MegaMenuItem[] | undefined;
   items1: MenuItem[] | undefined;
+  visible: boolean  = false;
   ngOnInit() {
     this.items = [
       {
@@ -691,5 +687,8 @@ export class HeaderComponent {
         label: 'Login'
       }
   ];
+  }
+  showDialog() {
+    this.visible = true;
   }
 }

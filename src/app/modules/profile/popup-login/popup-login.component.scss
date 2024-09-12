@@ -1,0 +1,199 @@
+.sign_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+.sign_aside{
+    width: 400px;
+}
+.sign_aside h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 0 !important;
+    line-height: 50px;
+}
+.sign_aside ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sign_aside ul li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.sign_aside ul li:not(:last-child){
+    margin-bottom: 1rem;
+}
+.sign_aside ul li h4{
+    margin-bottom: 0;
+    color: #777;
+}
+.sign_aside p{
+    margin: 20px 0 !important;
+    font-size: 14px !important;
+    font-weight: 500;
+    width: 360px;
+}
+.sign_formField{
+    width: 400px;
+}
+.sign_headTxt{
+    color: #777;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.inputWrapper{
+    margin-bottom: 10px;
+}
+.inputWrapper .inputIcon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    left: 13px;
+    height: 100%;
+}
+.inputWrapper .passIcon {
+    position: absolute;
+    right: 13px;
+    top: 0;
+    bottom: 0;
+    height: 19px;
+    margin: auto 0;
+}
+.inputWrapper input {
+    height: 50px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #EAECF2;
+    padding-left: 40px !important;
+}
+.inputWrapper a{
+    color: var(--primary-theme);
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 5px;
+    text-decoration: none;
+}
+.inputWrapper a:hover{
+    text-decoration: underline;
+}
+.btn-signIn{
+    background: var(--primary-theme);
+    border: 0;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.discalmer{
+    color: #898F9F;
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 10px;
+}s
+.forgetPassBox{
+    text-align: center;
+    border-radius: 10px;
+    background: #FAFAFA;
+    padding: 20px 40px;
+    margin-bottom: 20px;
+}
+.forgetPassBox h4{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+.forgetPassBox p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+}
+.backBtn{
+    padding: 0;
+    background: transparent;
+    border: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #777;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+::ng-deep body[dir="rtl"] .backBtn svg{
+    transform: scale(-1);
+}
+.mobi_back{
+    display: none;
+}
+.sign_formField {
+    .p-tabview-nav-content{
+        padding: 5px;
+        border-radius: 10px;
+        background: #F0F0F0;
+        margin-bottom: 30px;
+        overflow: visible;
+        position: relative;
+    }
+    .p-tabview-nav-link{
+        padding: 12px 20px;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 7px;
+    }
+    .p-tabview-nav li{
+        width: 50%;
+    }
+    .p-tabview-nav li a{
+        position: unset !important;
+    }
+    .p-highlight .p-tabview-nav-link{
+        position: relative !important;
+    }
+    .p-highlight .p-tabview-nav-link{
+        background: #fff;
+    }
+   
+}
+@media screen and (max-width: 1024px) {
+    .mobiHide{
+        display: none;
+    }
+    .sign_wrapper{
+        padding: 20px;
+        padding-top: 50px;
+        justify-content: center;
+    }
+    .mobi_back{
+        background: var(--primary-theme);
+    padding: 15px;
+    z-index: 2;
+    display: block !important;
+    position: relative;
+    }
+    .mobi_head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .mobi_tittle{
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .mobi_btn button{
+        padding: 0;
+        display: flex;
+        background: transparent;
+        border: 0;
+    }
+}

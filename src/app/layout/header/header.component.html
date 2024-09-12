@@ -1,7 +1,7 @@
 <header class="header">
     <div class="header_main">
         <div class="header_logo">
-            <a routerLink="/"><img src="https://www.rudraksha-ratna.com/assets/img/logo.jpg" alt=""></a>
+            <img src="https://www.rudraksha-ratna.com/assets/img/logo.jpg" alt="">
         </div>
         <div class="header_aside">
             <span class="material-symbols-outlined">
@@ -10,6 +10,9 @@
             <span class="material-symbols-outlined">
                 shopping_cart
             </span>
+            <button class="btn_login" (click)="showDialog()">
+                login
+            </button>
             <div class="header_menu">
                 <button (click)="menu.toggle($event)">
                     <span class="material-symbols-outlined">
@@ -25,7 +28,7 @@
             <nav class="site-main-menu hoverable">
                 <ul>
                     <li class="has-children">
-                        <a routerLink="/listing">
+                        <a href="#">
                             <span class="menu-text">
                                 Rudraksha
                             </span>
@@ -122,7 +125,7 @@
                         </div>
                     </li>
                     <li class="has-children">
-                        <a routerLink="/listing">
+                        <a href="#">
                             <span class="menu-text">
                                 Rudraksha
                             </span>
@@ -219,7 +222,7 @@
                         </div>
                     </li>
                     <li class="has-children">
-                        <a routerLink="/listing">
+                        <a href="#">
                             <span class="menu-text">
                                 Rudraksha
                             </span>
@@ -316,7 +319,7 @@
                         </div>
                     </li>
                     <li class="has-children">
-                        <a routerLink="/listing">
+                        <a href="#">
                             <span class="menu-text">
                                 Rudraksha
                             </span>
@@ -413,7 +416,7 @@
                         </div>
                     </li>
                     <li class="has-children">
-                        <a routerLink="/listing">
+                        <a href="#">
                             <span class="menu-text">
                                 Rudraksha
                             </span>
@@ -514,3 +517,8 @@
         </div>
     </div>
 </header>
+<div class="logInDialog">
+    <p-dialog [(visible)]="visible" [modal]="true" [draggable]="false" [resizable]="false">
+        <popup-login></popup-login>
+    </p-dialog>
+</div>
