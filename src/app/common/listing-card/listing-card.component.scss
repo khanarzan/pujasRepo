@@ -1,0 +1,215 @@
+// .product {
+//     margin-bottom: 40px;
+//     background: #fff;
+//     border-radius: 10px;
+//     overflow: hidden;
+//     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+// }
+// .product-thumb{
+//     position: relative;
+//     z-index: 2;
+//     margin: 0;    
+//     width: 100%;
+//     height: 100%;
+// }
+// .product-thumb .image {
+//     position: relative;
+//     display: block;
+//     overflow: hidden;
+//     height: 100%;
+// }
+// .product-thumb .image img:hover{
+//     transform: scale(1.2);
+// }
+// .product-thumb .image img {
+//     transition: all .5s ease 0s;
+//     z-index: 3;
+//     width: 100% !important;
+//     height: auto;
+// }
+// .product-info {
+//     position: relative;
+//     z-index: 3;
+//     padding: 20px;
+// }
+// .product-info .title {
+//     font-size: 14px;
+//     font-weight: 500;
+//     margin-bottom: 8px;
+//     line-height: 1.2;
+//     margin-top: 0;
+//     transition: all .5s ease 0s;
+//     a{
+//         text-decoration: none;
+//         font-size: 20px;
+//         color: var(--primary-theme);
+//         font-weight: 600;
+//     }
+// }
+// .desc{
+//     font-weight: 400;
+//     margin-top: 8px;
+//     font-size: 14px;
+// }
+// .product-info .sub-detail {
+//     font-size: 14px;
+//     font-weight: 400;
+//     color: #222;
+//     line-height: 1;
+//     display: flex;
+//     padding-bottom: 10px;
+//     justify-content: flex-end;
+// }
+// .product-info .sub-detail .prop-head {
+//     color: #222;
+//     font-weight: 500;
+//     font-size: 14px;
+//     display: inline-block;
+//     margin-right: 4px;
+// }
+// .sub-detail .prop-head {
+//     color: #222;
+//     font-size: 12px;
+//     font-weight: 400;
+// }
+// .product-info .price {
+//     font-size: 20px;
+//     font-weight: 600;
+//     color: #222;
+//     line-height: 1;
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-end;
+// }
+// .book_btn{
+//     text-align: right;
+//     margin-top: 10px;
+// }
+// .book_btn button{
+//     background-color: var(--primary-theme);
+//     border: 0;
+//     border-radius: 10px;
+//     color: #fff;
+//     padding: 12px 25px;
+//     font-size: 16px;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.post-shadow {
+    box-shadow: 0px 20px 30px rgba(27, 33, 37, 0.25);
+}
+.post-shadow .post-media {
+    width: 100%;
+    position: relative;    display: inline-block;
+    background-color: #1B2125;
+}
+.post-shadow .post-media:hover::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transition: all 0.2s ease-in-out;
+    background: #00000047;
+    width: 100%;
+}
+.post-shadow .post-hover-btn::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: calc(100% + 14px);
+    height: calc(100% + 14px);
+    content: '';
+    border-radius: inherit;
+    border: 1px solid #CF4A46;
+    transform: translate(-50%, -50%);
+}
+.post-shadow .post-hover-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5.25rem;
+    height: 5.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #CF4A46;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+.post-shadow .post-hover-btn {
+    opacity: 0;
+}
+.post-shadow .post-media:hover .post-hover-btn {
+    opacity: 1;
+}
+.post-shadow .post-content {
+    padding: 20px ;
+}
+.text-small {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.post-shadow .post-tag {
+    display: inline-block;
+    padding: 5px 10px;
+    color: #CF4A46;
+    background-color: rgba(207, 74, 70, 0.2);
+    transition: all 0.2s ease-in-out;
+    font-weight: 500;
+    font-size: 12px;
+    text-decoration: none;
+}  
+.text-divider {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+} 
+.post-shadow * + .post-title {
+    margin-top: 10px;
+}
+h4.post-title a{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
+.text-divider::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 51px;
+    height: 1px;
+    content: '';
+    background-color: #cfcfcf;
+}
+.post-shadow .post-date {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.post-media{
+    height: 250px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

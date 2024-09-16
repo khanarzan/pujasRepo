@@ -1,2 +1,110 @@
-<<p>profile works!</p>
->
+<div class="profile_breadcrum">
+    <div class="container">
+        <app-breadcrum></app-breadcrum>
+    </div>
+</div>
+<div class="profile_wrap">
+    <div class="container">
+        <div class="profile_body">
+            <div class="profile_aside">
+                <div class="profile_head">
+                    <div class="proile_point">
+                        <h4>Reward Point</h4>
+                        <h3>198.00</h3>
+                        <h4 class="badge">(INR 0)</h4>
+                        <h5>1 Reward Point = 1 INR</h5>
+                    </div>
+                    <div class="profile_wrapper">
+                        <ul>
+                            <li
+                                [ngClass]="{ active: activeTab === 'profile' }"
+                                (click)="setActiveTab('profile')"
+                            >
+                                <div class="profile_flex">
+                                    <span class="material-symbols-outlined"
+                                        style="font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24">
+                                        person
+                                    </span>
+                                    <h4>Profile</h4>
+                                </div>
+                                <span class="material-symbols-outlined"
+                                    style="font-variation-settings:'FILL' 1,'wght' 200,'GRAD' 0,'opsz' 24">
+                                    arrow_forward_ios
+                                </span>
+                            </li>
+                            <li
+                                [ngClass]="{ active: activeTab === 'orders' }"
+                                (click)="setActiveTab('orders')"
+                            >
+                                <div class="profile_flex">
+                                    <span class="material-symbols-outlined"
+                                        style="font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24">
+                                        description
+                                    </span>
+                                    <h4>Orders</h4>
+                                </div>
+                                <span class="material-symbols-outlined"
+                                    style="font-variation-settings:'FILL' 1,'wght' 200,'GRAD' 0,'opsz' 24">
+                                    arrow_forward_ios
+                                </span>
+                            </li>
+                            <li
+                                [ngClass]="{ active: activeTab === 'address' }"
+                                (click)="setActiveTab('address')"
+                            >
+                                <div class="profile_flex">
+                                    <span class="material-symbols-outlined"
+                                        style="font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24">
+                                        location_on
+                                    </span>
+                                    <h4>Address</h4>
+                                </div>
+                                <span class="material-symbols-outlined"
+                                    style="font-variation-settings:'FILL' 1,'wght' 200,'GRAD' 0,'opsz' 24">
+                                    arrow_forward_ios
+                                </span>
+                            </li>
+                            <li (click)="showDialog()">
+                                <div class="profile_flex">
+                                    <span class="material-symbols-outlined"
+                                        style="font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24">
+                                        logout
+                                    </span>
+                                    <h4>Logout</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="profile_conent">
+                <!-- Profile Tab -->
+                <div *ngIf="activeTab === 'profile'" class="profile_tab show">
+                    <app-profile-detail></app-profile-detail>
+                </div>
+                <!-- Orders Tab -->
+                <div *ngIf="activeTab === 'orders'" class="profile_tab show">
+                    <app-profile-order></app-profile-order>
+                </div>
+                <!-- Address Tab -->
+                <div *ngIf="activeTab === 'address'" class="profile_tab show">
+                    <app-profile-address></app-profile-address>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Logout Popup -->
+<div class="loginOut_popup">
+    <p-dialog [modal]="true" [(visible)]="visible" [style]="{ width: '25rem' }">
+        <div class="login_head">
+            <span class="material-symbols-outlined">logout</span>
+            <h4>Are you sure you want to sign out?</h4>
+            <div class="login_footer">
+                <button class="btn btn-cancel" (click)="visible = false">Cancel</button>
+                <button class="btn btn-primary" (click)="visible = false">Logout</button>
+            </div>
+        </div>
+    </p-dialog>
+</div>

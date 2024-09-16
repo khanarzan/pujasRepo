@@ -1,0 +1,18 @@
+.about_us{
+    padding: 50px 0;
+    h2{
+        font-size: 30px;
+        width: fit-content;
+        position: relative;
+    }
+    h2:after{
+        content: '';
+        width: 70%;
+        height: 2px;
+        background-color: var(--primary-theme);
+        display: block;
+    }
+    p{
+        margin-top: 20px;
+    }
+}

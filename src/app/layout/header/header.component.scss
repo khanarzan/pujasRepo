@@ -16,9 +16,11 @@
 }
 .section_heading{
     font-weight: 500;
-    font-size: 26px;
+    font-size: 22px;
     position: relative;
     width: fit-content;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .header{
@@ -174,3 +176,61 @@
 .menu-subcat-name:hover{
     font-weight: 500;
 }
+.logInDialog {
+    .p-dialog{
+        background: #fff;
+        padding: 50px 60px;
+        border-radius: 26px;
+        overflow: auto;
+    }
+    .p-dialog-header-icons{
+        position: absolute;
+        right: 24px;
+        top: 24px;
+    }
+    .p-dialog-content{
+      overflow: unset !important;
+    }
+    .p-dialog-mask.p-component-overlay{
+        background: rgb(0 0 0 / 54%);
+        backdrop-filter: blur(10px);
+    }
+    .p-dialog-header-icon .p-icon-wrapper svg path{
+        fill: #AEAEAE !important;
+    }
+    .p-dialog-header-icon .p-icon-wrapper{
+        display: flex;
+    }
+    .p-dialog-header-icon{
+        background: transparent;
+        border:0;
+        border-radius: 50%;
+        height: 26px;
+        width: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+  }
+  .btn_login{
+    padding: 5px 20px;
+    font-family: 'Poppins';
+    background: transparent;
+    border: 1px solid #b1b1b1;
+    border-radius: 10px;
+  }
+  @media screen and (max-width:960px) {
+.logInDialog {
+        .p-dialog{
+          height: 100%;
+          border-radius: 0;
+          padding: 0;
+          max-height: 100% !important ;
+          width: 100%;
+        }
+        .p-dialog-header{
+          display: none !important;
+        }
+      }
+  }

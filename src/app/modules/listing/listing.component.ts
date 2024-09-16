@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ListingCardComponent } from './listing-card/listing-card.component';
+import { ListingCardComponent } from '../../common/listing-card/listing-card.component';
 import { BreadcrumComponent } from '../../common/breadcrum/breadcrum.component';
 
 @Component({

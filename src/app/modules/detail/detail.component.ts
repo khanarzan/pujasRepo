@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, ElementRef, ViewChild } from '@angular/core';
-import { ListingCardComponent } from '../listing/listing-card/listing-card.component';
+import { ListingCardComponent } from '../../common/listing-card/listing-card.component';
 import { PhotoService } from '../../service/details/photoservice';
 
 @Component({

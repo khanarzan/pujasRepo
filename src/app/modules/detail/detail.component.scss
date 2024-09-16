@@ -2,15 +2,6 @@
     padding: 10px 0;
 
 }
-.productImages,
-.productImagesContainer{
-    position: sticky;
-    top: 25px;;
-}
-.productImages{
-    position: sticky;
-    top: 25px;;
-}
 .detail-body{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -184,3 +175,34 @@ app-listing-card{
     width: 35px;
     height: 35px;
 }
+.detail_popup{
+    .p-dialog{
+        border-radius: 10px;
+        background: #Ffff;
+    }
+    .p-dialog .p-dialog-header {
+        border-bottom: 0 none;
+        color: #334155;
+        padding: 1.5rem;
+    }
+    .p-dialog-content {
+        color: #334155;
+        padding: 0 1.5rem 1.5rem 1.5rem;
+        overflow-y: auto;
+        flex-grow: 1;
+    }
+    .p-dialog-header-close{
+        width: 1.75rem;
+        height: 1.75rem;
+        color: #64748b;
+        border: 0 none;
+        background: transparent;
+        border-radius: 50%;
+        transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, outline-color 0.2s;
+        margin-right: 0.5rem;
+    }
+    .p-dialog-title{
+        font-size: 16px !important;
+        font-weight: 500;
+    }
+} 

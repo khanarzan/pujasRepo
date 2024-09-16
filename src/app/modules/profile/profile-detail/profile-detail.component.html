@@ -1,0 +1,56 @@
+
+<div class="profile_main">
+    <span class="material-symbols-outlined" style=" font-variation-settings:
+        'FILL' 1,
+        'wght' 200,
+        'GRAD' 0,
+        'opsz' 24">
+        account_circle
+    </span>
+    <div class="profile_text">
+        <h2>User Information</h2>
+        <h4>Save and Edit Your Personal Information </h4>
+    </div>
+</div>
+<div class="profile_info">
+    <div class="profile_infoCard">
+        <div class="grid3col mb-15">
+            <div class="inputWrap">
+                <label for="name">First Name</label>
+                <input type="text" id="name">
+            </div>
+            <div class="inputWrap">
+                <label for="name">Middle Name(optional)</label>
+                <input type="text" id="name">
+            </div>
+            <div class="inputWrap">
+                <label for="Lastname">Last Name</label>
+                <input type="text" id="Lastname">
+            </div>
+        </div>
+        <div class="grid2col">
+            <div class="contactWrap">
+                <label for="phoneNo">Mobile No
+                    <div class="contactForm dropDown">
+                        <p-dropdown 
+                            #phoneNo
+                            [options]="cities" 
+                            [(ngModel)]="selectedCity" 
+                            optionLabel="name" 
+                            placeholder="Code" />
+                        <div class="inputWrap">
+                            <input type="text" id="phoneNo">
+                        </div>
+                    </div>
+                </label>
+            </div>
+            <div class="inputWrap">
+                <label for="emailname">Email</label>
+                <input type="text" id="emailname">
+            </div>
+        </div>
+        <div class="profile_btn">
+            <button class="btn btn-primary"> Save</button>
+        </div>
+    </div>
+</div>

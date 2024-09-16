@@ -12,6 +12,8 @@ import { DialogModule } from 'primeng/dialog';
 import { ProfileModule } from '../modules/profile/profile.module';
 import { FormsModule } from '@angular/forms';
 import { FullPageLoginComponent } from '../modules/profile/full-page-login/full-page-login.component';
+import { AddFavoritesComponent } from '../modules/add-favorites/add-favorites.component';
+import { AboutUsComponent } from '../modules/about-us/about-us.component';
 
 const routes: Routes = [
     {
@@ -31,12 +33,24 @@ const routes: Routes = [
                 loadChildren: () => import('../modules/detail/detail.module').then(m => m.DetailRoutes )
             },
             {
+                path: 'profile',
+                loadChildren: () => import('../modules/profile/profile.module').then(m => m.ProfileModule )
+            },
+            {
                 path: 'checkout',
                 component: CheckoutComponent
             },
             {
                 path: 'login',
                 component: FullPageLoginComponent
+            },
+            {
+                path: 'favorites',
+                component: AddFavoritesComponent
+            },
+            {
+                path: 'about-us',
+                component: AboutUsComponent
             },
 
            
@@ -47,14 +61,14 @@ const routes: Routes = [
 
 @NgModule({
     declarations: [BaseComponent,
-        HeaderComponent],
+        HeaderComponent,FooterComponent],
     imports: [
         CommonModule, 
         DialogModule, 
         MenuModule, 
         ProfileModule,
         FormsModule,
-        RouterModule.forChild(routes), FooterComponent],
+        RouterModule.forChild(routes), ],
     exports: [RouterModule]
 })
 export class LayoutRoutes { }

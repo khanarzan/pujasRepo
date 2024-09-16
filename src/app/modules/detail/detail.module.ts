@@ -9,7 +9,7 @@ import { DialogModule } from 'primeng/dialog';
 import { BreadcrumComponent } from '../../common/breadcrum/breadcrum.component';
 import { CarouselModule } from 'primeng/carousel';
 import { PhotoService } from "../../service/details/photoservice";
-import { ListingCardComponent } from "../listing/listing-card/listing-card.component";
+import { ListingCardComponent } from "../../common/listing-card/listing-card.component";
 
 export const routes: Routes = [
     {

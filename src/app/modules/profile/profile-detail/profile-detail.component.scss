@@ -1,0 +1,73 @@
+.profile_main{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 15px 30px;
+    border-radius: 10px;
+    gap: 10px;
+    span.material-symbols-outlined{
+        font-size: 60px;
+        color: var(--primary-theme);
+    }
+}
+.profile_text h2,.profile_text h4{
+    margin: 0;
+}
+.grid3col{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    width: 100%;
+}
+.inputWrap{
+    label{
+        display: block;
+        margin-bottom: 5px;
+    }
+    input{
+        height: 50px;
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #EAECF2;
+    }
+}
+.profile_info{
+    background: #fff;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.grid2col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-end;
+    gap: 15px;
+    width: 100%;
+}
+.contactForm{
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    gap: 10px;
+}
+.dropDown .p-dropdown.p-inputwrapper{
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #EAECF2;
+}
+.profile_infoCard{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 15px;
+}
+.profile_btn{
+    padding-top: 20px;
+    margin-top: 10px;
+    border-top: 1px solid #EAECF2;
+    width: 100%;
+    text-align: right;
+}

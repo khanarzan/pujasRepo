@@ -1,0 +1,42 @@
+.order_detail{
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    table{
+        width: 100%;
+        border: 1px solid #c1c1c1;
+        border-radius: 10px;
+        overflow: hidden;
+        border-spacing: 0;
+        thead{
+            background: var(--primary-light);
+        }
+        th,td{
+            text-align: inherit;
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+        th{
+            font-weight: 500;
+        }
+        td{
+            font-weight: 400;
+        }
+    }
+}
+.profile_main{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 15px 30px;
+    border-radius: 10px;
+    gap: 10px;
+    span.material-symbols-outlined{
+        font-size: 60px;
+        color: var(--primary-theme);
+    }
+}
+.profile_text h2,.profile_text h4{
+    margin: 0;
+}

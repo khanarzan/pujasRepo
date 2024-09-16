@@ -1,0 +1,91 @@
+<div class="profile_main">
+    <span class="material-symbols-outlined" style=" font-variation-settings:
+        'FILL' 1,
+        'wght' 200,
+        'GRAD' 0,
+        'opsz' 24">
+        share_location
+    </span>
+    <div class="profile_text">
+        <h2>Address Information</h2>
+        <h4>Add/Edit and Change Your Address</h4>
+    </div>
+</div>
+<div class="address_body">
+    <div class="address_box">
+        <div class="address_info">
+            <h4>Kumar Shiv | +91 9082403828</h4>
+            <h5>Thane, Thane, Thane, Mumbai, Maharashtra, India - 400604</h5>
+        </div>
+        <div class="address_actionBTn">
+            <span class="material-symbols-outlined" style=" font-variation-settings:
+                'FILL' 1,
+                'wght' 200,
+                'GRAD' 0,
+                'opsz' 24">
+                    edit
+            </span>
+            <span class="material-symbols-outlined" style=" font-variation-settings:
+                'FILL' 1,
+                'wght' 200,
+                'GRAD' 0,
+                'opsz' 24">            
+                    delete
+            </span>
+        </div>
+    </div>
+    <div class="address_footer">
+        <button class="btn btn-primary" (click)="showDialog()">Add Address</button>
+    </div>
+</div>
+<div class="address_popup">
+    <p-dialog header="Description" [modal]="true" [(visible)]="visible" [style]="{ width: '40rem' }">
+        <div class="user_section">
+            <div class="inputWrap mb-15">
+                <label for="name">Address Line 1</label>
+                <input type="text" id="name">
+            </div>
+            <div class="inputWrap mb-15">
+                <label for="name">Address Line 1</label>
+                <input type="text" id="name">
+            </div>
+            <div class="grid2col mb-15">
+                <div class="inputWrap">
+                    <label for="Lastname">Landmark</label>
+                    <input type="text" id="Lastname">
+                </div>
+                <div class="inputWrap dropDown">
+                    <label for="Lastname">Country</label>
+                    <p-dropdown 
+                        #phoneNo
+                        [options]="cities" 
+                        [(ngModel)]="selectedCity" 
+                        optionLabel="name" 
+                        placeholder="Country" />
+                </div>
+                <div class="inputWrap dropDown">
+                    <label for="Lastname">State</label>
+                    <p-dropdown 
+                        #phoneNo
+                        [options]="cities" 
+                        [(ngModel)]="selectedCity" 
+                        optionLabel="name" 
+                        placeholder="Country" />
+                </div>
+                <div class="inputWrap dropDown">
+                    <label for="Lastname">City</label>
+                    <p-dropdown 
+                        #phoneNo
+                        [options]="cities" 
+                        [(ngModel)]="selectedCity" 
+                        optionLabel="name" 
+                        placeholder="Country" />
+                </div>
+                <div class="inputWrap">
+                    <label for="Lastname">Pincode / Zipcode</label>
+                    <input type="text" id="Lastname">
+                </div>
+            </div>
+        </div>
+    </p-dialog>
+</div>

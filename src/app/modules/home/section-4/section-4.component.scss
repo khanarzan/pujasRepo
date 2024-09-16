@@ -31,7 +31,7 @@
     }
     .hoverContent::before{
         background-color: var(--primary-theme);
-    background-image: linear-gradient((var(--primary-light), var(--primary-theme)));
+        background-image: linear-gradient(var(--primary-light), var(--primary-theme));
         position: absolute;
         top: 0px;
         right: 0px;
@@ -46,7 +46,7 @@
     }
     .hoverContent::after{
         background-color: var(--primary-theme);
-    background-image: linear-gradient((var(--primary-light), var(--primary-theme)));
+        background-image: linear-gradient(var(--primary-light), var(--primary-theme));
         position: absolute;
         top: 0px;
         right: 0px;
