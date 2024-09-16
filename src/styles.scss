@@ -1,9 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 :root{
-    --primary-theme: #d8375c;
-    --primary-light: #fef2ee;
-    --secondary-theme: #F47B58;
-    --secondary-light: #F2F4F8;
+    --primary-theme: #206d7f;
+    --primary-light: #83a9b2;
+    --secondary-theme: #ff7e34;
+    --secondary-light: #fef2ee;
 }
 *, ::after, ::before {
     box-sizing: border-box;
@@ -13,6 +13,7 @@ body{
     padding: 0;
     box-sizing: border-box;    
     background: #ffffff;
+    overflow-x: hidden;
     font-family: Poppins
 }
 .container{

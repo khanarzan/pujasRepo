@@ -11,8 +11,7 @@ import { RouterOutlet } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { CarouselModule } from 'primeng/carousel';
 import { MegaMenuModule } from 'primeng/megamenu';
-import { DetailComponent } from '../detail/detail.component';
-import { ListingComponent } from '../listing/listing.component';
+import AOS from 'aos'; //AOS - 1
 
 @Component({
   selector: 'app-home',
@@ -35,5 +34,7 @@ import { ListingComponent } from '../listing/listing.component';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-
+  ngOnInit() {
+    AOS.init({});//AOS - 2
+  }
 }

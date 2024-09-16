@@ -3,6 +3,7 @@ import { ButtonModule } from 'primeng/button';
 import { CarouselModule } from 'primeng/carousel';
 import { Product } from '../../../product';
 import { ProductService } from '../../../productservice';
+import AOS from 'aos'; //AOS - 1
 
 @Component({
   selector: 'app-section-4',
@@ -40,5 +41,6 @@ export class Section4Component {
               numScroll: 1
           }
       ];
+      AOS.init();
   }
 }

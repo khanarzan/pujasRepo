@@ -1,10 +1,10 @@
 import { Component, Input } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-listing-card',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './listing-card.component.html',
   styleUrl: './listing-card.component.scss'
 })

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import AOS from 'aos'; //AOS - 1
 
 @Component({
   selector: 'app-section-7',
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './section-7.component.scss'
 })
 export class Section7Component {
-
+  ngOnInit() {
+    AOS.init();
+  }
 }

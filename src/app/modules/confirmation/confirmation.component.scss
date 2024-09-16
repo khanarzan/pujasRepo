@@ -1,0 +1,119 @@
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    margin: 40px 0 20px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .header p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #666;
+  }
+  
+  .payment-section, 
+  .shipping-section, 
+  .tracking-section, 
+  .support-section, 
+  .offers-section {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+  .payment-section ul, 
+  .shipping-section ul {
+    list-style: none;
+    padding: 20px;
+   margin: 0;
+  }
+  .card_section{
+    padding: 20px;
+  }
+  .payment-section li, 
+  .shipping-section li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .payment-section li:last-child, 
+  .shipping-section li:last-child {
+    border-bottom: none;
+  }
+  
+  .tracking-section p, 
+  .support-section p {
+    margin-bottom: 10px;
+  }
+  
+  .offers-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .offers-section p {
+    margin-bottom: 10px;
+  }
+
+
+  .order-summary-section {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-summary-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .order-summary-table th, 
+  .order-summary-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .order-summary-table th {
+    background-color: #f2f2f2;
+    text-align: initial;
+  }
+  
+  .order-summary-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .order-summary-table tfoot th, 
+  .order-summary-table tfoot td {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  /* Section Header Styles */
+
+.section-header {
+    padding: 10px 20px;
+    background-color: var(--primary-theme);
+    color: #fff;
+    border-bottom: 1px solid #ccc;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-header h2 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 500;
+  }

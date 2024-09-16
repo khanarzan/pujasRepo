@@ -1,5 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { AccordionModule } from 'primeng/accordion';
 import { DropdownModule } from 'primeng/dropdown';
 interface City {
@@ -9,7 +10,7 @@ interface City {
 @Component({
   selector: 'app-checkout',
   standalone: true,
-  imports: [AccordionModule,FormsModule,DropdownModule],
+  imports: [AccordionModule,FormsModule,DropdownModule,RouterModule],
   templateUrl: './checkout.component.html',
   styleUrl: './checkout.component.scss',
   encapsulation: ViewEncapsulation.None,

@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { FullPageLoginComponent } from '../modules/profile/full-page-login/full-page-login.component';
 import { AddFavoritesComponent } from '../modules/add-favorites/add-favorites.component';
 import { AboutUsComponent } from '../modules/about-us/about-us.component';
+import { ConfirmationComponent } from '../modules/confirmation/confirmation.component';
 
 const routes: Routes = [
     {
@@ -51,6 +52,10 @@ const routes: Routes = [
             {
                 path: 'about-us',
                 component: AboutUsComponent
+            },
+            {
+                path: 'confirmation',
+                component: ConfirmationComponent
             },
 
            

@@ -22,7 +22,14 @@
     padding-bottom: 5px;
     margin-bottom: 20px;
 }
-
+.header_hText{
+    text-align: center;
+    background-color: var(--secondary-theme);
+    color: var(--primary-theme);
+    font-weight: 500;
+    padding: 5px 0;
+    font-size: 14px;
+}
 .header{
     background: #fff;
     &_main{
@@ -34,7 +41,7 @@
         padding: 10px 0;
     }
     &_logo img{
-        width: 200px;
+        height: 100px;
     }
     &_bottom{
         background: var(--primary-theme);
