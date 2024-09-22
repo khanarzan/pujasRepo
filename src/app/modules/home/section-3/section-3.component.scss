@@ -58,3 +58,11 @@
         }
     }
 }
+@media screen and (max-width:960px) {
+    .section3 .card_wrap li {
+        flex: 48%;
+        img{
+            height: 200px;
+        }
+    }
+}

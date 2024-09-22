@@ -193,3 +193,19 @@
 .bookSum_footer{
     text-align: center;
 }
+@media screen and (max-width:960px) {
+    .container{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .grid3col,
+    .grid2col {
+        grid-template-columns: 100%;
+    }
+    .checkout_aside{
+        flex: 0 0 100%;
+    }
+    .checkout_wrap{
+        flex-direction: column;
+    }
+}

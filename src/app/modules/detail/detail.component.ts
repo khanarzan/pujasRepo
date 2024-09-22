@@ -35,10 +35,29 @@ export class DetailComponent {
   images: any[] | undefined;
     
     responsiveOptions: any[] | undefined;
+    responsiveOptions1: any[] | undefined;
 
     constructor(private photoService: PhotoService) {}
 
-    ngOnInit() {
+  ngOnInit() {
+    this.responsiveOptions1 = [
+      {
+          breakpoint: '1199px',
+          numVisible: 4,
+          numScroll: 1
+      },
+      {
+          breakpoint: '991px',
+          numVisible: 2,
+          numScroll: 1
+      },
+      {
+        
+          breakpoint: '767px',
+          numVisible: 1,
+          numScroll: 1
+      }
+  ];
         this.photoService.getImages().then((images) => (this.images = images));
         this.responsiveOptions = [
             {

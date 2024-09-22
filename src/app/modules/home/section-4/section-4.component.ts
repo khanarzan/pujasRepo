@@ -32,12 +32,12 @@ export class Section4Component {
           },
           {
               breakpoint: '991px',
-              numVisible: 3,
+              numVisible: 1,
               numScroll: 1
           },
           {
               breakpoint: '767px',
-              numVisible: 2,
+              numVisible: 1,
               numScroll: 1
           }
       ];

@@ -77,3 +77,27 @@
         height: 100%;
     }
 }
+@media screen and (max-width:960px) {
+    .section2{
+        padding: 30px 10px;
+    }
+    .section2 .pooja_img{
+        height: 270px;
+    }
+    .section2 .p-carousel-items-content{
+        border-radius: 10px;
+    }
+    .section2 .p-carousel-next {
+        right: 10px;
+    }
+    .section2 .p-carousel-prev{
+        left:10px;
+    }
+    .section2 .p-carousel-next, .section2 .p-carousel-prev{
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+}

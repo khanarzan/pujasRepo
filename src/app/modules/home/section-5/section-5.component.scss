@@ -108,3 +108,16 @@
         }
     }
 }
+@media screen and (max-width:960px) {
+    .section5 .card_section{
+        grid-template-columns: 100% !important;
+       .card_aside{
+        .card_head{
+            width: 100%;
+        }
+           .card_btn{
+               display: none;
+           }
+       }
+    }
+}
