@@ -11,10 +11,11 @@ import { FooterComponent } from "./footer/footer.component";
 import { DialogModule } from 'primeng/dialog';
 import { ProfileModule } from '../modules/profile/profile.module';
 import { FormsModule } from '@angular/forms';
-import { FullPageLoginComponent } from '../modules/profile/full-page-login/full-page-login.component';
+import { FullPageLoginComponent } from '../modules/auth/full-page-login/full-page-login.component';
 import { AddFavoritesComponent } from '../modules/add-favorites/add-favorites.component';
 import { AboutUsComponent } from '../modules/about-us/about-us.component';
 import { ConfirmationComponent } from '../modules/confirmation/confirmation.component';
+import { AddToCartComponent } from '../modules/add-to-cart/add-to-cart.component';
 
 const routes: Routes = [
     {
@@ -57,10 +58,18 @@ const routes: Routes = [
                 path: 'confirmation',
                 component: ConfirmationComponent
             },
-
+            {
+                path: 'addToCart',
+                component: AddToCartComponent,
+            },
            
         ],
     },
+    {
+        path: 'full-login',
+        component: FullPageLoginComponent,
+    },
+ 
     
 ];
 

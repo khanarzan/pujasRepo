@@ -1,11 +1,15 @@
 .sign_wrapper{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 30px;
 
 }
 .sign_aside{
     width: 400px;
+}
+.sign_logo img{
+    width: 150px;
 }
 .sign_aside h1{
     font-size: 40px;
@@ -81,9 +85,6 @@
 }
 .inputWrapper a:hover{
     text-decoration: underline;
-}
-.sign_logo img{
-    width: 150px;
 }
 .btn-signIn{
     background: var(--primary-theme);
@@ -167,6 +168,9 @@
         background: #fff;
     }
    
+}
+.h-100vh{
+    height: 100vh !important;
 }
 @media screen and (max-width: 1024px) {
     .mobiHide{

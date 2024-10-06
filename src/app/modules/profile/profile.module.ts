@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FullPageLoginComponent } from './full-page-login/full-page-login.component';
+import { FullPageLoginComponent } from '../auth/full-page-login/full-page-login.component';
 import { PopupLoginComponent } from './popup-login/popup-login.component';
 import { ProfileComponent } from './profile.component';
 import { FormsModule } from '@angular/forms';
@@ -22,7 +22,6 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    FullPageLoginComponent,
     PopupLoginComponent,
     ProfileComponent,
     ProfileDetailComponent,
@@ -40,7 +39,6 @@ const routes: Routes = [
   ]
   ,
   exports: [
-    FullPageLoginComponent,
     PopupLoginComponent
   ]
 })

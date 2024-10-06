@@ -1,9 +1,9 @@
 <div class="hover_body">
     <span class="material-symbols-outlined">favorite</span>
-    <div class="hover_cont">
+    <div class="hover_cont" *ngIf="showButtons">
         <h4>Lorem ipsum dolor sit amet.</h4>
     </div>
-    <div class="hover_footer" *ngIf="showButtons">
+    <div class="hover_footer" >
         <button class="btn-hover">
             <span class="material-symbols-outlined">shopping_cart</span>
         </button>
