@@ -109,6 +109,10 @@ app-listing-card{
     .p-carousel-indicators {
         display: none;
     }
+    .p-carousel-content,
+    .p-carousel-items-content{
+        overflow: hidden;
+    }
     .p-carousel{
         position: relative;
     }

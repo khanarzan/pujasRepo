@@ -1,0 +1,63 @@
+.hover_body{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .material-symbols-outlined{
+        text-align: end;
+        width: 100%;
+   
+    }
+}
+.hover_cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    h4{
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+}
+.hover_footer{
+    display: flex;
+    gap: 20px;
+}
+.btn-hover {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    border: 1px solid white;
+    span{
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.btn-hover::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1; /* Keep it behind the text/icon */
+    transform: translateY(100%); /* Start the background off-screen (bottom) */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.btn-hover:hover::before {
+    transform: translateY(0); /* Slide the background up */
+}
+
+.btn-hover:hover {
+    color: #000; /* Adjust text color if needed on hover */
+}

@@ -30,11 +30,13 @@
 
 
 <div class="post post-shadow">
-    <a class="post-media" type="btn">
+    <a class="post-media hoverCard" type="btn">
         <img src="https://s3.amazonaws.com/RudraCentre/ProductThumbnail/Other/SPS234_87957.jpg" alt="">
-        <div class="post-hover-btn" [routerLink]="'/detail'">View Detail</div>
+        <div class="post-hover-btn hoverCont">
+            <app-on-hover-actions [showButtons]="true"></app-on-hover-actions>
+        </div>
     </a>
-    <div class="post-content">
+    <div class="post-content" [routerLink]="'/detail'">
         <div class="post-tags group-5 text-small">
             <a class="post-tag" href="#">Product Code: TM09</a>
         </div>

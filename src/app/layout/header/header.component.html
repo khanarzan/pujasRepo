@@ -7,23 +7,48 @@
             <img src="../../../assets/logo/logo.png" alt="" [routerLink]="'./'">
         </div>
         <div class="header_aside">
-            <span class="material-symbols-outlined" [routerLink]="'/favorites'">
-                favorite
-            </span>
-            <span class="material-symbols-outlined">
-                shopping_cart
-            </span>
-            <button class="btn_login" (click)="showDialog()">
-                login
-            </button>
-            <div class="header_menu">
-                <button (click)="menu.toggle($event)">
-                    <span class="material-symbols-outlined">
-                        person
+            <ul class="header_links">
+                <li>
+                    <span class="" [routerLink]="'/favorites'">
+                        Home
                     </span>
-                </button>
-                <p-menu #menu [model]="items1" [popup]="true" />
-            </div>
+                </li>
+                <li>
+                    <span class="" [routerLink]="'/favorites'">
+                        About Us
+                    </span>
+                </li>
+                <li>
+                    <span class="" [routerLink]="'/favorites'">
+                        Contact Us
+                    </span>
+                </li>
+                <li>
+                    <span class="material-symbols-outlined" [routerLink]="'/favorites'">
+                        favorite
+                    </span>
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                </li>
+                <li>
+                    <button class="btn_login" (click)="showDialog()">
+                        login
+                    </button>
+                </li>
+                <li>
+                    <div class="header_menu">
+                        <button (click)="menu.toggle($event)">
+                            <span class="material-symbols-outlined">
+                                person
+                            </span>
+                        </button>
+                        <p-menu #menu [model]="items1" [popup]="true" />
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="header_bottom">
