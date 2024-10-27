@@ -13,6 +13,53 @@
     <div class="">
         <div  class="section-head"><h4 >Rudra Centre Online Collection</h4></div>
     </div>
+    <div class="filter_head">         
+        <div class="filter_dropdown">
+            <button class="filter_btn" (click)="toggleDropdown1()" [class.active]="isOpen1">
+                Price
+                <span class="material-symbols-outlined">
+                    arrow_drop_down
+                </span>
+            </button>
+            <div *ngIf="isOpen1" class="filter_menu range">
+                <ngx-slider [(value)]="value" [(highValue)]="highValue" [options]="options"></ngx-slider>
+            </div>
+        </div>
+        <div class="filter_dropdown">
+            <button class="filter_btn" (click)="toggleDropdown2()" [class.active]="isOpen2">
+                {{ selectedOption || 'Select an option' }}
+                <span class="material-symbols-outlined">
+                    arrow_drop_down
+                </span>
+            </button>
+            <div *ngIf="isOpen2" class="filter_menu item">
+                <div
+                *ngFor="let option of dropdownOptions"
+                class="filter_item"
+                (click)="selectOption(option)"
+              >
+                {{ option }}
+              </div> 
+            </div>
+        </div>
+        <div class="filter_dropdown">
+            <button class="filter_btn" (click)="toggleDropdown3()" [class.active]="isOpen3">
+                {{ selectedOption || 'Select an option' }}
+                <span class="material-symbols-outlined">
+                    arrow_drop_down
+                </span>
+            </button>
+            <div *ngIf="isOpen3" class="filter_menu item">
+                <div
+                *ngFor="let option of dropdownOptions"
+                class="filter_item"
+                (click)="selectOption(option)"
+              >
+                {{ option }}
+              </div>
+            </div>
+        </div>
+    </div>
     <div class="listing_card">
         <app-listing-card></app-listing-card>
         <app-listing-card></app-listing-card>

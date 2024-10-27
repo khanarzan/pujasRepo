@@ -6,24 +6,30 @@
         <div class="header_logo">
             <img src="../../../assets/logo/logo.png" alt="" [routerLink]="'./'">
         </div>
+        <div class="header_srh mobiHide">
+            <input type="text" placeholder="Search products by name or product code">
+            <span class="material-symbols-outlined">
+                search
+            </span>
+        </div>
         <div class="header_aside">
             <ul class="header_links">
-                <li>
+                <li class="mobiHide">
                     <span class="" [routerLink]="'/favorites'">
                         Home
                     </span>
                 </li>
-                <li>
+                <li class="mobiHide">
                     <span class="" [routerLink]="'/favorites'">
                         About Us
                     </span>
                 </li>
-                <li>
+                <li class="mobiHide">
                     <span class="" [routerLink]="'/favorites'">
                         Contact Us
                     </span>
                 </li>
-                <li>
+                <li class="mobiHide">
                     <span class="material-symbols-outlined" [routerLink]="'/favorites'">
                         favorite
                     </span>
@@ -35,7 +41,7 @@
                 </li>
                 <li>
                     <button class="btn_login" (click)="showDialog()">
-                        login
+                        Sign In
                     </button>
                 </li>
                 <li>
@@ -51,7 +57,7 @@
             </ul>
         </div>
     </div>
-    <div class="header_bottom">
+    <div class="header_bottom ">
         <div class="header_navbar">
             <nav class="site-main-menu hoverable">
                 <ul>

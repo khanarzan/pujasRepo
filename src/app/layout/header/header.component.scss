@@ -60,7 +60,24 @@
     &_content{
         opacity: 0;
     }
-    
+    &_srh{
+        width: 40%;
+        margin: 0 30px;
+        position: relative;
+        input{
+            border: 1px solid #c8c8c8;
+            padding: 8px 15px;
+            height: 40px;
+            width: 100%;
+            border-radius: 5px;
+        }
+        .material-symbols-outlined{
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+    }
 }
 .site-main-menu{
     width: 80%;
@@ -221,11 +238,14 @@
     }
   }
   .btn_login{
-    padding: 5px 20px;
-    font-family: 'Poppins';
-    background: transparent;
-    border: 1px solid #b1b1b1;
-    border-radius: 10px;
+    padding: 8px 20px;
+    font-family: "Poppins";
+    border-radius: 5px;
+    font-size: 16px;
+    border: 0;
+    font-weight: 500;
+    background: var(--primary-theme);
+    color: #fff;
   }
   .header_links{
     list-style: none;
@@ -237,6 +257,7 @@
     li {
         display: flex;
         align-items: center;
+        cursor: pointer;
     }
   }
   .p-menu{

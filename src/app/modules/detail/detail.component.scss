@@ -210,7 +210,67 @@ app-listing-card{
         font-weight: 500;
     }
 } 
-
+.pooja-varWrap{
+    margin: 20px 0 10px ;
+    p{
+        font-weight: 500;
+    }
+}
+.pooja_info button {
+    padding: 10px 20px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 0;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    span{
+        display: flex;
+    }
+}
+.phone{
+    background-color: var(--primary-theme);
+    color: #fff;
+}
+.whatsapp{
+    background: #0bcb65;
+    color: #fff;
+}
+.mail{
+    background-color: transparent;
+    border: 1px solid var(--secondary-theme) !important;
+    color:var(--secondary-theme);
+}
+.pooja_info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+.pooja-variation{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    input{
+        display: none;
+    }
+    span{
+        background-color: transparent;
+        border: 1px solid var(--primary-theme);
+        color: var(--primary-theme);
+        padding: 12px 20px ;
+        display: block;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input[type="radio"]:checked + span{
+        background-color: var(--primary-theme) !important;
+        color: #fff !important;
+    }
+}
 @media screen and (max-width:960px) {
     .container{
         width: 100%;

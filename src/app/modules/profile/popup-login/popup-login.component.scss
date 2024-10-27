@@ -170,7 +170,7 @@
 }
 @media screen and (max-width: 1024px) {
     .mobiHide{
-        display: none;
+        display: none !important;
     }
     .sign_wrapper{
         padding: 20px;

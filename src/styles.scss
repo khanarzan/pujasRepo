@@ -61,11 +61,12 @@ body{
 .form_control,
 .p-inputwrapper input{
     font-family:Poppins ;
-    font-size: 1rem;
+    font-size: 16px;
     width: -webkit-fill-available;
     color: #334155;
     background: #ffffff;
-    padding: 0.5rem 0.75rem;
+    padding: 0.5rem 1rem;
+    height: 40px;
     border: 1px solid #cbd5e1;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, outline-color 0.2s;
     appearance: none;
@@ -116,6 +117,12 @@ font-size: 1rem;
     border: 1px solid var(--primary-theme) !important;
     background-color: var(--primary-theme) !important;
 }
+button{
+    cursor: pointer;
+}
+a {
+    cursor: pointer;
+}
 .btn {
     font-size: 1.6rem;
     cursor: pointer;
@@ -150,4 +157,81 @@ font-size: 1rem;
 .hoverCard:hover .hoverCont app-on-hover-actions {
     opacity: 1; /* Show on hover */
     visibility: visible;
+}
+// 
+.ngx-slider-span.ngx-slider-bubble.ngx-slider-model-value {
+    right: 0 !important;
+    left: unset !important;
+    opacity: 1 !important;
+}
+.ngx-slider .ngx-slider-bar {
+    height: 8px !important;
+    border-radius: 50px !important;
+    border: 1px #e8e8e8 solid !important;
+}
+.ngx-slider .ngx-slider-selection {
+    background-color: var(--primary-theme) !important;
+    height: 8px !important;
+    bottom: 9px !important
+}
+.ngx-slider .ngx-slider-pointer {
+    cursor: pointer;
+    width: 25px !important;
+    height: 25px !important;
+    top: -11px !important;
+    box-shadow: #63636333 0 2px 8px;
+    border: 1px solid #e1e1e1;
+    background-color: #fff !important;
+    outline: 0 !important
+}
+.ngx-slider .ngx-slider-pointer:after {
+    display: none !important;
+}
+.ngx-slider .ngx-slider-bubble.ngx-slider-limit,
+.ngx-slider .ngx-slider-bubble.ngx-slider-combined {
+    display: none;
+}
+.ngx-slider-span.ngx-slider-bubble.ngx-slider-combined {
+    opacity: 0 !important;
+}
+ .ngx-slider-span.ngx-slider-bubble.ngx-slider-model-high {
+    right: 0 !important;
+    opacity: 1 !important;
+    left: unset !important;
+}
+ .ngx-slider-span.ngx-slider-bubble.ngx-slider-model-value {
+    opacity: 1 !important;
+    left: 0 !important;
+}
+.ngx-slider-span.ngx-slider-bubble.ngx-slider-model-high {
+    opacity: 1 !important;
+}
+.ngx-slider .ngx-slider-bubble {
+    font-size: 1.2rem;
+    padding: 0;
+    color: var(--primary-theme);
+    border-radius: 5px;
+    font-weight: 500;
+}
+.ngx-slider-model-high:before {
+    content: var(--max-text);
+}
+.ngx-slider-pointer:after,
+.ngx-slider-limit,
+.ngx-slider-combined {
+    display: none !important
+}
+.ngx-slider-model-value:before,
+.ngx-slider-model-high:before {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--primary-theme);
+    font-weight: 600
+}
+.ngx-slider {
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    margin: 15px 0 0 !important;
+    display: flex !important;
+    gap: 5px
 }
