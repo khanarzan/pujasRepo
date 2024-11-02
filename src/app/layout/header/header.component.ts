@@ -1,6 +1,8 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { MegaMenuItem, MenuItem } from 'primeng/api';
 import { ProductService } from '../../productservice';
+import { CommonService } from '../../core/common/common.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -12,7 +14,8 @@ import { ProductService } from '../../productservice';
 export class HeaderComponent {
   items: MegaMenuItem[] | undefined;
   items1: MenuItem[] | undefined;
-  visible: boolean  = false;
+  constructor(public comServ : CommonService,private router: Router) { }
+
   ngOnInit() {
     this.items = [
       {
@@ -22,7 +25,9 @@ export class HeaderComponent {
             {
               label: 'Nepal Rudraksha',
               items: [
-                { label: '1 Mukhi Half Moon' },
+                {
+                  label: '1 Mukhi Half Moon',
+                },
                 { label: '2 mukhi Nepal' },
                 { label: '3 mukhi Nepal' },
                 { label: '4 mukhi Nepal' },
@@ -665,7 +670,6 @@ export class HeaderComponent {
         items: [
           [
             { label: 'About Us' },
-            { label: 'Contact Us' },
             { label: 'Articles (Blogs)' },
             { label: 'Testimonials' },
             { label: 'Careers' },
@@ -678,17 +682,21 @@ export class HeaderComponent {
     ];
     this.items1 = [
       {
-        label: 'My Account'
+        label: 'My Account',
+        command: () => {
+          this.router.navigate(['profile/manage']);
+      }
       },
       {
         label: 'My Orders'
       },
       {
-        label: 'Login'
+        label: 'Login',
+        command: () => {
+          this.router.navigate(['full-login']);
+      }
       }
   ];
   }
-  showDialog() {
-    this.visible = true;
-  }
+
 }

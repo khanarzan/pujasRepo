@@ -1,0 +1,38 @@
+<div class="sectionTesto">
+    <div class="cms_wrapper">
+        <h1 class="section_heading">Testomonial</h1>
+        <div class="cms_cardWrap">
+            <p-carousel
+                [value]="images"
+                [numVisible]="2"
+                [numScroll]="1"
+                [circular]="false"
+                [responsiveOptions]="responsiveOptions"
+            >
+                <ng-template pTemplate="item" let-image>
+                    <div class="cms_cardTestWrap">
+                        <div class="cms_cardContent">
+                            <img [src]="image.src">
+                            <div class="cms_cardContent pt-1">
+                                <h4 class="cms_cardTestName">
+                                    ABC
+                                </h4>
+                                <div class="cms_cardTestLocation">
+                                    Mumbra, Thane
+                                </div>
+                                <p>
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                    piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard
+                                    McClintock,
+                                </p>
+                                <span class="material-symbols-outlined cms_quaoteIcon">
+                                    format_quote
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </p-carousel>
+        </div>
+    </div>
+</div>

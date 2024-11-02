@@ -1,0 +1,106 @@
+.sectionTesto{
+    padding-top: 60px;
+}
+.cms {
+    &_wrapper{
+        position: relative;
+    }
+    &_cardTestWrap {
+        min-height: 300px;
+        height: 100%;
+        padding: 4rem 4rem 0;
+        margin-top: 5rem;
+        display: flex;
+        align-items: center;
+        border: 1px solid #d9e2e8;
+        border-radius: 10px;
+        img {
+            border-radius: 50%;
+            width: 8rem;
+            height: 8rem;
+            position: absolute;
+            top: 0;
+        }
+    }
+
+    .p-carousel-item:not(:last-child) &_cardTestWrap {
+        margin-right: 1.5rem;
+    }
+
+    &_cardTestWrap {
+        img {
+            left: 3rem;
+        }
+    }
+    &_cardTestName {
+        font-weight: 600;
+        font-size: 1.6rem;
+    }
+    
+    &_cardTestLocation {
+        color: #6b6868;
+        padding: .3rem 0;
+    }
+    
+    &_cardTestLocation~p {
+        width: 75%;
+        color: #000000;
+    }
+    
+    &_quaoteIcon {
+        font-size: 6rem;
+        rotate: 180deg;
+        width: 100%;
+        color: #ECECEC;
+    }
+    
+    &_quaoteIcon {
+        text-align: end;
+    }
+}
+.cms_wrapper .p-element.p-carousel-prev {
+    right: 50px;
+}
+.cms_wrapper .p-carousel-prev, .cms_wrapper .p-carousel-next {
+    position: absolute;
+    top: -7px;
+    box-shadow: 0 4px 20px #0000001a;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 0;
+    background: #fff;
+}
+.cms_wrapper .p-carousel-item {
+    height: 100%;
+    position: relative;
+}
+.cms_wrapper .p-carousel-next {
+    right: 0;
+}
+.cms_wrapper .dropdown_menu, .p-carousel-indicators {
+    display: none;
+}
+@media screen and (max-width: 1024px) {
+    .cms {
+        &_cardTestWrap {
+            padding: 40px 15px 0px;
+
+            img {
+                width: 65px;
+                height: 65px;
+                top: -34px;
+            }
+        }
+
+        &_cardTestLocation~p {
+            width: 100%;
+        }
+
+        &_cardTestWrap {
+            img {
+                left: 12px;
+            }
+        }
+    }
+}

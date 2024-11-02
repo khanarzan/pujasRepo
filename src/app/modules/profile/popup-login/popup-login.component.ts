@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { CommonService } from '../../../core/common/common.service';
 
 @Component({
   selector: 'popup-login',
@@ -23,7 +24,7 @@ export class PopupLoginComponent {
   toggleContent() {
     this.showContent = !this.showContent;
   }
-  constructor() {
+  constructor(public comServ : CommonService) { }
 
-  }
 }
+ 

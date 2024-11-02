@@ -12,6 +12,7 @@ import { ButtonModule } from 'primeng/button';
 import { CarouselModule } from 'primeng/carousel';
 import { MegaMenuModule } from 'primeng/megamenu';
 import AOS from 'aos'; //AOS - 1
+import { TestomonialComponent } from './testomonial/testomonial.component';
 
 @Component({
   selector: 'app-home',
@@ -29,6 +30,7 @@ import AOS from 'aos'; //AOS - 1
     Section5Component,
     Section6Component,
     Section7Component,
+    TestomonialComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'

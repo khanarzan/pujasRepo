@@ -6,7 +6,7 @@ import AOS from 'aos'; //AOS - 1
   standalone: true,
   imports: [],
   templateUrl: './section-7.component.html',
-  styleUrl: './section-7.component.scss'
+  styleUrl: './section-7.component.scss',
 })
 export class Section7Component {
   ngOnInit() {

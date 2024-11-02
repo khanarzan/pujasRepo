@@ -235,3 +235,14 @@ a {
     display: flex !important;
     gap: 5px
 }
+.p-overlay{
+    background: #ffff;
+    border-radius: 10px;
+    box-shadow: #11111a0d 0 4px 16px, #11111a0d 0 8px 32px;
+    .p-dropdown-item:hover{
+        background: #e8e8e8;
+    }
+    .p-dropdown-item{
+        padding: 15px 10px
+    }
+}
