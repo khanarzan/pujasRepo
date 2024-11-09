@@ -700,8 +700,8 @@ export class HeaderComponent {
   }
   menuOpen = false;
   menuCategories = [
-    { name: 'Category 1', open: false, items: [{ name: 'Sub-item 1', link: '/item1' }, { name: 'Sub-item 2', link: '/item2' }] },
-    { name: 'Category 2', open: false, items: [{ name: 'Sub-item 3', link: '/item3' }, { name: 'Sub-item 4', link: '/item4' }] }
+    { name: 'Category 1', open: true, items: [{ name: 'Listing Page', link: '/listing' }, { name: 'Sub-item 2', link: '/item2' }] },
+    { name: 'Category 2', open: false, items: [{ name: 'Sub-item 3', link: '/listing' }, { name: 'Sub-item 4', link: '/item4' }] }
     // Add more categories and items as needed
   ];
   
