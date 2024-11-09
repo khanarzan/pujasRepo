@@ -13,9 +13,9 @@ export class ProfileComponent {
   showDialog() {
       this.visible = true;
   }
-  activeTab: string = 'profile';
+  activeTab: string = '';
 
   setActiveTab(tab: string) {
-    this.activeTab = tab;
+    this.activeTab = this.activeTab === tab ? '' : tab; // Toggle the tab
   }
 }

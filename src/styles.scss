@@ -10,12 +10,15 @@ html {
 }
 :root{
     --primary-theme: #3C98B1;
-    --primary-light: #83a9b2;
+    --primary-light: #c9e1e6;
     --secondary-theme: #DD7C35;
     --secondary-light: #fef2ee;
 }
 *, ::after, ::before {
     box-sizing: border-box;
+}
+button{
+    font-family: 'Poppins' !important;
 }
 body{
     margin: 0;
@@ -249,5 +252,8 @@ a {
 @media screen and (max-width:960px) {
     .trans-unset{
         transform: unset !important;
+    }
+    app-breadcrum{
+        display: none;
     }
 }

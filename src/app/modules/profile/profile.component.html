@@ -79,15 +79,39 @@
             </div>
             <div class="profile_conent">
                 <!-- Profile Tab -->
-                <div *ngIf="activeTab === 'profile'" class="profile_tab show">
+                <div [class.show]="activeTab === 'profile'" class="profile_tab">
+                    <div class="backTo">
+                        <button (click)="setActiveTab('profile')">
+                            <span class="material-symbols-outlined">
+                                keyboard_backspace
+                            </span>
+                            Back to My Account
+                        </button>
+                    </div>
                     <app-profile-detail></app-profile-detail>
                 </div>
                 <!-- Orders Tab -->
-                <div *ngIf="activeTab === 'orders'" class="profile_tab show">
+                <div [class.show]="activeTab === 'orders'" class="profile_tab">
+                    <div class="backTo">
+                        <button (click)="setActiveTab('orders')">
+                            <span class="material-symbols-outlined">
+                                keyboard_backspace
+                            </span>
+                            Back to My Account
+                        </button>
+                    </div>
                     <app-profile-order></app-profile-order>
                 </div>
                 <!-- Address Tab -->
-                <div *ngIf="activeTab === 'address'" class="profile_tab show">
+                <div [class.show]="activeTab === 'address'"class="profile_tab">
+                    <div class="backTo">
+                        <button (click)="setActiveTab('address')">
+                            <span class="material-symbols-outlined">
+                                keyboard_backspace
+                            </span>
+                            Back to My Account
+                        </button>
+                    </div>
                     <app-profile-address></app-profile-address>
                 </div>
             </div>
