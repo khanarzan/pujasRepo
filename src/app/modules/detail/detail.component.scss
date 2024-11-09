@@ -1,6 +1,6 @@
 .breadcrumb-wrapper{
     padding: 10px 0;
-
+    width: 99%;
 }
 .detail-body{
     display: grid;
@@ -240,13 +240,14 @@ app-listing-card{
     color: #fff;
 }
 .mail{
-    background-color: transparent;
+    background-color: transparent; 
     border: 1px solid var(--secondary-theme) !important;
     color:var(--secondary-theme);
 }
 .pooja_info{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
     margin: 20px 0;
 }

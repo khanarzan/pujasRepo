@@ -4,6 +4,11 @@
 <header class="header">
     <div class="header_main">
         <div class="header_logo">
+            <button (click)="menuOpen = !menuOpen" class="menu-toggle mobiShow">
+                <span class="material-symbols-outlined">
+                    menu
+                    </span>
+            </button>
             <img src="../../../assets/logo/logo.png" alt="" [routerLink]="'./'">
         </div>
         <div class="header_srh mobiHide">
@@ -52,7 +57,7 @@
             </ul>
         </div>
     </div>
-    <div class="header_bottom ">
+    <div class="header_bottom mobiHide">
         <div class="header_navbar">
             <nav class="site-main-menu hoverable">
                 <ul>
@@ -550,4 +555,36 @@
     <p-dialog [(visible)]="comServ.visible" [modal]="true" [draggable]="false" [resizable]="false">
         <popup-login></popup-login>
     </p-dialog>
+</div>
+<div class="mobile-menu mobiShow" [class.open]="menuOpen">
+    <div class="menu-overlay" *ngIf="menuOpen">
+        <div class="header_hText">
+            卐 "शुद्धे पूजा, शाश्वते निधिः" 卐
+        </div>
+        <div class="p-10">
+            <div class="header_logo">
+                <button (click)="menuOpen = !menuOpen" class="menu-toggle">
+                    <span class="material-symbols-outlined">
+                        close
+                        </span>
+                </button>
+                <img src="../../../assets/logo/logo.png" alt="" [routerLink]="'./'">
+            </div>
+        </div>
+
+        <div *ngFor="let category of menuCategories" 
+        class="menu-category" 
+        [ngClass]="{ 'open': category.open }">
+
+        <button (click)="toggleCategory(category)" class="category-header">
+          {{ category.name }}
+          <span class="material-symbols-outlined">
+            keyboard_arrow_down
+            </span>
+        </button>
+        <div *ngIf="category.open" class="category-content">
+          <a *ngFor="let item of category.items" [routerLink]="item.link">{{ item.name }}</a>
+        </div>
+      </div>
+    </div>
 </div>
